@@ -39,3 +39,5 @@ Tank Arena
 Programming: Jorrit Rouwe
 Graphics:    Dennis Medema
 Music:       Janne Leinonen
+
+Full version can be downloaded from: http://jrouwe.nl/tank/
