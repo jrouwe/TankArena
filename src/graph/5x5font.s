@@ -1,0 +1,589 @@
+# This is the 5x5 font used throughout the game.
+
+	.globl _start_5x5_font
+
+	.data
+
+	.align 4
+
+_start_5x5_font:
+	.fill	30, 5, 0	# junk
+
+	.byte	0B00100000	# arrow up
+	.byte	0B01110000
+	.byte	0B01110000
+	.byte	0B11111000
+	.byte	0B11111000
+
+	.byte	0B11111000	# arrow down
+	.byte	0B11111000
+	.byte	0B01110000
+	.byte	0B01110000
+	.byte	0B00100000
+
+	.fill	1, 5, 0 	# ' '
+
+	.byte	0B01000000	# '!'
+	.byte	0B01000000
+	.byte	0B01000000
+	.byte	0B00000000
+	.byte	0B01000000
+
+	.byte	0B01010000	# accolade
+	.byte	0B01010000
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00000000
+
+	.byte	0B01010000	# '#'
+	.byte	0B11111000
+	.byte	0B01010000
+	.byte	0B11111000
+	.byte	0B01010000
+
+	.byte	0B01111000	# '$'
+	.byte	0B10100000
+	.byte	0B01110000
+	.byte	0B00101000
+	.byte	0B11110000
+
+	.byte	0B10001000	# '%'
+	.byte	0B00010000
+	.byte	0B00100000
+	.byte	0B01000000
+	.byte	0B10001000
+
+	.byte	0B01000000	# '&'
+	.byte	0B10101000
+	.byte	0B01010000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B00100000	# '''
+	.byte	0B01000000
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00000000
+
+	.byte	0B00010000	# '('
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00010000
+
+	.byte	0B01000000	# ')'
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B01000000
+
+	.byte	0B10101000	# '*'
+	.byte	0B01110000
+	.byte	0B11111000
+	.byte	0B01110000
+	.byte	0B10101000
+
+	.byte	0B00100000	# '+'
+	.byte	0B00100000
+	.byte	0B11111000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B00000000	# ','
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00100000
+	.byte	0B01000000
+
+	.byte	0B00000000	# '-'
+	.byte	0B00000000
+	.byte	0B11111000
+	.byte	0B00000000
+	.byte	0B00000000
+
+	.byte	0B00000000	# '.'
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00100000
+
+	.byte	0B00001000	# '/'
+	.byte	0B00010000
+	.byte	0B00100000
+	.byte	0B01000000
+	.byte	0B10000000
+
+	.byte	0B01110000	# '0'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B00100000	# '1'
+	.byte	0B01100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B01110000
+
+	.byte	0B01110000	# '2'
+	.byte	0B10001000
+	.byte	0B00110000
+	.byte	0B01000000
+	.byte	0B11111000
+
+	.byte	0B11110000	# '3'
+	.byte	0B00001000
+	.byte	0B00111000
+	.byte	0B00001000
+	.byte	0B11110000
+
+	.byte	0B10010000	# '4'
+	.byte	0B10010000
+	.byte	0B11111000
+	.byte	0B00010000
+	.byte	0B00010000
+
+	.byte	0B11111000	# '5'
+	.byte	0B10000000
+	.byte	0B01110000
+	.byte	0B00001000
+	.byte	0B11110000
+
+	.byte	0B01111000	# '6'
+	.byte	0B10000000
+	.byte	0B11110000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B11111000	# '7'
+	.byte	0B00001000
+	.byte	0B00010000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B01110000	# '8'
+	.byte	0B10001000
+	.byte	0B01110000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B01110000	# '9'
+	.byte	0B10001000
+	.byte	0B01111000
+	.byte	0B00001000
+	.byte	0B01110000
+
+	.byte	0B00000000	# ':'
+	.byte	0B00100000
+	.byte	0B00000000
+	.byte	0B00100000
+	.byte	0B00000000
+
+	.byte	0B00000000	# ';'
+	.byte	0B00100000
+	.byte	0B00000000
+	.byte	0B00100000
+	.byte	0B01000000
+
+	.byte	0B00011000	# '<'
+	.byte	0B01100000
+	.byte	0B10000000
+	.byte	0B01100000
+	.byte	0B00011000
+
+	.byte	0B00000000	# '='
+	.byte	0B11111000
+	.byte	0B00000000
+	.byte	0B11111000
+	.byte	0B00000000
+
+	.byte	0B11000000	# '>'
+	.byte	0B00110000
+	.byte	0B00001000
+	.byte	0B00110000
+	.byte	0B11000000
+
+	.byte	0B01110000	# '?'
+	.byte	0B10001000
+	.byte	0B00010000
+	.byte	0B00000000
+	.byte	0B00100000
+
+	.byte	0B01110000	# '@'
+	.byte	0B10111000
+	.byte	0B10111000
+	.byte	0B10000000
+	.byte	0B01110000
+
+	.byte	0B01110000	# 'A'
+	.byte	0B10001000
+	.byte	0B11111000
+	.byte	0B10001000
+	.byte	0B10001000
+
+	.byte	0B11110000	# 'B'
+	.byte	0B10001000
+	.byte	0B11110000
+	.byte	0B10001000
+	.byte	0B11110000
+
+	.byte	0B01111000	# 'C'
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B01111000
+
+	.byte	0B11110000	# 'D'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B11110000
+
+	.byte	0B11111000	# 'E'
+	.byte	0B10000000
+	.byte	0B11110000
+	.byte	0B10000000
+	.byte	0B11111000
+
+	.byte	0B11111000	# 'F'
+	.byte	0B10000000
+	.byte	0B11110000
+	.byte	0B10000000
+	.byte	0B10000000
+
+	.byte	0B01110000	# 'G'
+	.byte	0B10000000
+	.byte	0B10011000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B10001000	# 'H'
+	.byte	0B10001000
+	.byte	0B11111000
+	.byte	0B10001000
+	.byte	0B10001000
+
+	.byte	0B00100000	# 'I'
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B11111000	# 'J'
+	.byte	0B00001000
+	.byte	0B00001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B10001000	# 'K'
+	.byte	0B10010000
+	.byte	0B11100000
+	.byte	0B10010000
+	.byte	0B10001000
+
+	.byte	0B10000000	# 'L'
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B11111000
+
+	.byte	0B10001000	# 'M'
+	.byte	0B11011000
+	.byte	0B10101000
+	.byte	0B10001000
+	.byte	0B10001000
+
+	.byte	0B10001000	# 'N'
+	.byte	0B11001000
+	.byte	0B10101000
+	.byte	0B10011000
+	.byte	0B10001000
+
+	.byte	0B01110000	# 'O'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B11110000	# 'P'
+	.byte	0B10001000
+	.byte	0B11110000
+	.byte	0B10000000
+	.byte	0B10000000
+
+	.byte	0B01110000	# 'Q'
+	.byte	0B10001000
+	.byte	0B10101000
+	.byte	0B10010000
+	.byte	0B01101000
+
+	.byte	0B11110000	# 'R'
+	.byte	0B10001000
+	.byte	0B11110000
+	.byte	0B10010000
+	.byte	0B10001000
+
+	.byte	0B01111000	# 'S'
+	.byte	0B10000000
+	.byte	0B01110000
+	.byte	0B00001000
+	.byte	0B11110000
+
+	.byte	0B11111000	# 'T'
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B10001000	# 'U'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B10001000	# 'V'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01010000
+	.byte	0B00100000
+
+	.byte	0B10001000	# 'W'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10101000
+	.byte	0B01010000
+
+	.byte	0B10001000	# 'X'
+	.byte	0B01010000
+	.byte	0B00100000
+	.byte	0B01010000
+	.byte	0B10001000
+
+	.byte	0B10001000	# 'Y'
+	.byte	0B01010000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B11111000	# 'Z'
+	.byte	0B00010000
+	.byte	0B00100000
+	.byte	0B01000000
+	.byte	0B11111000
+
+	.byte	0B01110000	# '['
+	.byte	0B01000000
+	.byte	0B01000000
+	.byte	0B01000000
+	.byte	0B01110000
+
+	.byte	0B10000000	# '\'
+	.byte	0B01000000
+	.byte	0B00100000
+	.byte	0B00010000
+	.byte	0B00001000
+
+	.byte	0B01110000	# ']'
+	.byte	0B00010000
+	.byte	0B00010000
+	.byte	0B00010000
+	.byte	0B01110000
+
+	.byte	0B01110000	# '^'
+	.byte	0B10001000
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00000000
+
+	.byte	0B00000000	# '_'
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B11111000
+
+	.byte	0B01000000	# '`'
+	.byte	0B00100000
+	.byte	0B00000000
+	.byte	0B00000000
+	.byte	0B00000000
+
+	.byte	0B01110000	# 'A'
+	.byte	0B10001000
+	.byte	0B11111000
+	.byte	0B10001000
+	.byte	0B10001000
+
+	.byte	0B11110000	# 'B'
+	.byte	0B10001000
+	.byte	0B11110000
+	.byte	0B10001000
+	.byte	0B11110000
+
+	.byte	0B01111000	# 'C'
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B01111000
+
+	.byte	0B11110000	# 'D'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B11110000
+
+	.byte	0B11111000	# 'E'
+	.byte	0B10000000
+	.byte	0B11110000
+	.byte	0B10000000
+	.byte	0B11111000
+
+	.byte	0B11111000	# 'F'
+	.byte	0B10000000
+	.byte	0B11110000
+	.byte	0B10000000
+	.byte	0B10000000
+
+	.byte	0B01110000	# 'G'
+	.byte	0B10000000
+	.byte	0B10011000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B10001000	# 'H'
+	.byte	0B10001000
+	.byte	0B11111000
+	.byte	0B10001000
+	.byte	0B10001000
+
+	.byte	0B00100000	# 'I'
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B11111000	# 'J'
+	.byte	0B00001000
+	.byte	0B00001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B10001000	# 'K'
+	.byte	0B10010000
+	.byte	0B11100000
+	.byte	0B10010000
+	.byte	0B10001000
+
+	.byte	0B10000000	# 'L'
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B10000000
+	.byte	0B11111000
+
+	.byte	0B10001000	# 'M'
+	.byte	0B11011000
+	.byte	0B10101000
+	.byte	0B10001000
+	.byte	0B10001000
+
+	.byte	0B10001000	# 'N'
+	.byte	0B11001000
+	.byte	0B10101000
+	.byte	0B10011000
+	.byte	0B10001000
+
+	.byte	0B01110000	# 'O'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B11110000	# 'P'
+	.byte	0B10001000
+	.byte	0B11110000
+	.byte	0B10000000
+	.byte	0B10000000
+
+	.byte	0B01110000	# 'Q'
+	.byte	0B10001000
+	.byte	0B10101000
+	.byte	0B10010000
+	.byte	0B01101000
+
+	.byte	0B11110000	# 'R'
+	.byte	0B10001000
+	.byte	0B11110000
+	.byte	0B10010000
+	.byte	0B10001000
+
+	.byte	0B01111000	# 'S'
+	.byte	0B10000000
+	.byte	0B01110000
+	.byte	0B00001000
+	.byte	0B11110000
+
+	.byte	0B11111000	# 'T'
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B10001000	# 'U'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01110000
+
+	.byte	0B10001000	# 'V'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B01010000
+	.byte	0B00100000
+
+	.byte	0B10001000	# 'W'
+	.byte	0B10001000
+	.byte	0B10001000
+	.byte	0B10101000
+	.byte	0B01010000
+
+	.byte	0B10001000	# 'X'
+	.byte	0B01010000
+	.byte	0B00100000
+	.byte	0B01010000
+	.byte	0B10001000
+
+	.byte	0B10001000	# 'Y'
+	.byte	0B01010000
+	.byte	0B00100000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B11111000	# 'Z'
+	.byte	0B00010000
+	.byte	0B00100000
+	.byte	0B01000000
+	.byte	0B11111000
+
+	.byte	0B00010000	# '{'
+	.byte	0B00100000
+	.byte	0B01100000
+	.byte	0B00100000
+	.byte	0B00010000
+
+	.byte	0B00100000	# '|'
+	.byte	0B00100000
+	.byte	0B00000000
+	.byte	0B00100000
+	.byte	0B00100000
+
+	.byte	0B01000000	# '}'
+	.byte	0B00100000
+	.byte	0B00110000
+	.byte	0B00100000
+	.byte	0B01000000
+
+	.byte	0B01010000	# '~' = INFINITY
+	.byte	0B10101000
+	.byte	0B10101000
+	.byte	0B10101000
+	.byte	0B01010000
+

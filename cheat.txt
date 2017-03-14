@@ -1,0 +1,53 @@
+All cheats are activated from the DOS command line, so here
+are all supported command line options.
+
+First the boring ones:
+----------------------
+
+-SETUP			Enter setup menu.
+-SETSOUND		Enter the setup sound menu.
+-KEYTEST		Test keyboard.
+-INFO			Displays info.
+-DEBUG			Display framerate etc.
+
+Now the interesting ones:
+-------------------------
+
+-AUTOLOCK		Automatically locks maps when saving.
+			Also enables loading of locked maps!
+-NOLOCKLIMIT		Gives you infinite range when locking
+			your homing missiles, handy for looking
+			at a map!
+-GOD			Oh well, guess what this is!
+-NOFAIL			Game stops detecting if you failed your
+			mission.
+-LOADSOFWEAPONS		Infinite ammo!
+-CODES			Displays mission codes of all maps!
+
+So if you want to have fun you start tank like this:
+
+C:\TANK>tank -nolocklimit -god -loadsofweapons
+
+There is another interesting bit in this file:
+----------------------------------------------
+
+If you think a resolution of 640x480 is too low, then edit the file
+"TANK.CFG".
+
+Use for example:
+
+GRAPH_DRV = 0
+RES_X = 1024
+RES_Y = 768
+NUM_PAGES = 1
+
+It is safe to use GRAPH_DRV = 0, Tank Arena will then autodetect the
+graph driver. NUM_PAGES is the number of video pages the game will
+use (1 or 2). The video memory required for a specific setting 
+is: NUM_PAGES * RES_X * RES_Y. Make sure this doesn't exceed the 
+memory on your video card.
+
+If you changed something and you can't get it right again, delete
+TANK.CFG.
+
+Have fun!

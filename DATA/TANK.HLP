@@ -1,0 +1,1017 @@
+----------------------------------------
+     Tank Arena - by 3.14 Software
+----------------------------------------
+
+Index
+-----
+
+1 Introduction
+
+2 Setting up Tank Arena
+  2.1 Requirements
+  2.2 Screen configuration
+  2.3 Sound configuration
+  2.4 Keyboard configuration
+  2.5 Joystick configuration
+  2.6 Setting everything to default
+
+3 In game configuration
+  3.1 Selecting laps
+  3.2 Selecting rounds
+  3.3 Selecting losers tank
+  3.4 Gamma correction
+  3.5 Sound/music volume
+
+4 Playing
+  4.1 Dual player game
+      4.1.1 Destroy eachother
+      4.1.2 Capture the flag
+      4.1.3 Racing
+  4.2 Single player game
+  4.3 Dual player versus computer
+  4.4 The weapons
+  4.5 The enemies
+      4.5.1 Tanks
+      4.5.2 Trains
+      4.5.3 B52's
+      4.5.4 Turrets
+      4.5.5 Mines
+      4.5.6 Warps
+      4.5.7 Locks
+  4.6 The status screen
+  4.7 Bonusses
+  4.8 Pausing the game
+  4.9 Making screen shots!
+
+5 Editing a map
+  5.1  Controls
+       5.5.1 Keyboard
+       5.5.2 Mouse
+  5.2  Creating a map
+  5.3  Creating a starting point
+  5.4  Creating buildings
+  5.5  Creating other objects
+       5.5.1  Tanks
+       5.5.2  Trains
+       5.5.3  B52's
+       5.5.4  Turrets
+       5.5.5  Mines
+       5.5.6  Warps
+       5.5.7  Locks
+       5.5.8  Goals
+       5.5.9  Destroyer
+       5.5.10 Enforcer
+  5.6  Mission objectives
+  5.7  Mission codes
+  5.8  Mission briefing
+  5.9  Saving and quitting
+  5.10 Final remark
+
+6 Contributors
+  6.1 Dpmi manager
+  6.2 Allegro library
+  6.3 Keyboard handler
+
+7 How to get in touch
+
+
+1 Introduction
+--------------
+
+In march 1994 Dennis and me (Jorrit)
+started on this game. It started off
+more or less as a bet and we originally
+planned only two tanks (the standard
+tank and the devastator). We would make
+three weapons (main, chain, and flame
+thrower) and we would make three different
+types of walls. We could never have
+imagined what our game would grow to:
+
+- 1 and 2 player modes
+- Race mode
+- Capture the flag mode
+- Night missions
+- Three different worlds
+- 21 different tanks/planes/helicopters
+- B52's, trains, turrets, warps
+- Resolutions up to 640x480
+- Sound support for soundblaster cards
+
+and too many other options to name here.
+
+I know this game is not really high tech
+like most 3D games of nowadays and we
+never tried to make a high tech game.
+Tank Arena was made because we felt that
+playing with two people on one computer
+is still the best way to have fun on a
+computer.
+
+
+2 Setting up Tank Arena
+-----------------------
+
+2.1 Requirements
+----------------
+
+Tank Arena "runs" on a 386 with only
+4 mb of memory and a standard VGA
+card.
+
+However if you want Tank Arena to be
+playable you need a 486DX with a fast
+video card (preferably 32 bits wide).
+
+If you want to play in higher resolutions
+then you'll need a Pentium or higher.
+
+If you want to edit maps, you also need
+a mouse driver loaded.
+
+Turning off the sound or selecting a
+lower sampling rate increases frame
+rate also.
+
+This game has been tested with Windows
+3.1 and 95, but the best way to play
+Tank Arena is to boot DOS as clean as
+possible.
+
+
+2.2 Screen configuration
+------------------------
+
+At the DOS prompt type:
+
+SETUP
+
+or
+
+TANK -setup
+
+to enter the setup menu. You can select
+options by pressing the Up/Down arrow
+keys and pressing ENTER.
+
+Select the first option in the setup
+menu. You will now get a list of
+possible screen drivers. The fastest
+mode is the first one. If you have
+the screen flickers a lot then you
+should try the second and third one.
+If you have a fast computer you can
+choose from the last two.
+
+If you select a high resolution mode
+(vesa mode) then make sure you have
+a video card that supports vesa modes
+(most do nowadays), or otherwise the
+game will not run properly.
+
+In the game you can also change the
+size of the screen. you can do this
+by pressing '-' and '+' (the ones
+next to the backspace key).
+
+2.3 Sound configuration
+-----------------------
+
+At the DOS prompt type:
+
+SETSOUND
+
+or
+
+TANK -setsound
+
+And select your sound card or click on
+the autodetect button.
+
+2.4 Keyboard configuration
+--------------------------
+
+Please look at "Default Keys" in the game
+or look at the file KEYS.HLP.
+
+2.5 Joystick configuration
+--------------------------
+
+If you want to use one or more joysticks
+select "Select Controls" in the setup
+program and select joystick.
+
+If you have one joystick connected to
+your computer then you can only select
+it for player 1. Joystick 2 can only
+be selected for player 2.
+
+Then go to "Configurate Joystick" to
+change the button settings or the
+sensitivity of the joystick.
+
+The sensitivity of the joystick is a
+number from 0 to 100, 0 means totally 
+insensitive and 100 means extremely 
+sensitive.
+
+You can also define the meaning of every
+joystick button or of a combination of 
+joystick buttons (by simply pressing them
+together in the "Configurate Joystick"
+menu). Please note that the weapon select
+keys and the activate shield key will 
+still work on the keyboard, so that if 
+you have a joystick with two buttons you 
+can use those to aim your gun and to fire.
+
+2.6 Setting everything to default
+---------------------------------
+
+If you accidently changed something then
+you can restore everything to default
+by typing:
+
+del tank.cfg
+
+
+3 in game configuration
+-----------------------
+
+In the game go to the "game options" menu.
+
+3.1 selecting laps
+------------------
+
+The number of laps in the race mode can
+be changed by pressing ENTER at the
+item: "race consists of ? laps". You can
+change it from 1 to 6.
+
+3.2 Selecting rounds
+--------------------
+
+You can simply select the number of rounds
+per two player game by pressing ENTER at
+the "round consists of ? rounds" item.
+The sign ~ means infinitly many rounds.
+After one player has won more than half
+of them the two player game is over.
+
+3.3 Selecting losers tank
+-------------------------
+
+The losers tank was created to make the
+game more fair for people with less
+experience. After you have lost a number
+of times you will be able to select a
+a different tank. This tank is much
+stronger than all the other tanks and
+is easy to control because it doesn't
+have a turret.
+
+3.4 Gamma correction
+--------------------
+
+For dark monitors an option for gamma
+correction is included. The higher this
+number the lighter the screen will be.
+During the game you can toggle the
+gamma correction by pressing F11.
+
+3.5 Sound/music volume
+----------------------
+
+Press ENTER to toggle between the
+various settings.
+
+
+4 Playing
+---------
+
+4.1 Dual player game
+--------------------
+
+If you select this menu option then you
+will be prompted for a map name. Press
+Esc to see a list of available maps.
+
+After that you will see a list of
+available tanks to play with. Both
+of the players use their control
+keys to select a tank. Press fire
+when done or press ENTER to accept
+both tanks.
+
+4.1.1 Destroy eachother
+-----------------------
+
+In the normal two player game the screen
+is divided in two regions. one is for
+player 1 and one for player 2. The mission
+objective in this mode is to kill 
+eachother. Each player has three tanks
+and once you have killed your opponent
+you can return to your starting point
+to recharge yourself. The arrow on screen
+shows where your opponent is.
+
+4.1.2 Capture the flag
+----------------------
+
+Tank Arena also has the classic capture
+the flag mode. Mission objective in this
+mode is to capture the opponents flag
+and return it to your base. You have
+infinitly many tanks to accomplish this
+mission. In this mode you can return to
+your base to recharge when you killed
+your opponent too. It is possible to
+define multiple points where flags can
+be hidden, to make the map more playable.
+
+4.1.3 Racing
+------------
+
+The final two player mode is called the
+race mode. In this mode you have to drive
+a number of laps and pass all the check-
+points. The number of laps can be set
+in the game options menu.
+
+You can hear a beep if you pass a check-
+point, and each time you drive over the
+finish your driver will tell you how
+many laps are left. If you die then you
+will regenerate on the last checkpoint
+you passed.
+
+WARNING: Tank Arena only remembers 25
+checkpoints, so if you put more in your
+map some will not be used.
+
+4.2 Single player game
+----------------------
+
+In this mode you play against the
+computer. A short mission briefing tells
+you what to do before the mission starts.
+If you complete the mission, the password
+for the next mission will be saved
+automatically. All passwords are remembered
+so you don't have to write them down.
+
+In a single player game you can have
+multiple tanks under your control, you
+can have tanks/turrets on your side
+and you can have tanks that will attack
+you. To select one of your own tanks
+you can press F1..F10. In many levels
+you will have to defend your tanks
+to prevent them from getting killed.
+
+4.3 Dual player versus computer
+-------------------------------
+
+The dual player game is like the single
+player game. The only difference is that
+you can control two tanks at the same
+time.
+
+Player 2 selects his tank by pressing
+F1..F10. Player 1 selects his tank by
+holding the Alt key and pressing F1..F10.
+Needless to say that you can't play with
+the same tank.
+
+The advantage of this mode is that you
+have more fire power, disadvantage is
+that you can't view the map.
+
+4.4 The weapons
+---------------
+
+I will discuss the weapons from left to
+right on your screen, however in single 
+player mode you might not have all 
+possible weapons.
+
+main gun: with this weapon you fire a
+normal bullet. some tanks may fire
+rockets, they're more powerful, but they
+don't hit anything until some distance
+away from you.
+
+chain gun: with this weapon you can
+fire a lot of bullets, this weapon is more
+powerful at short range.
+
+flame thrower: this weapon is very
+effective against some structures (like
+trees) on other structures it may have
+no effect at all. it costs fuel to use
+this weapon.
+
+mines: if you put these on the ground
+you'd better get out fast because they
+only have a short delay. mines are
+invisible, but you can blow them up
+with almost every weapon.
+
+rockets: hold the fire button if you have
+selected rockets. a marker will appear
+on the screen and you can move it around
+to select a target. rockets will
+automatically home on moving targets.
+
+mortar: the mortar gun will fire a huge
+grenade, which if it strikes the ground
+is very effective against almost every-
+thing.
+
+bombs: the same icon as the mortar is
+used for planes to drop bombs.
+
+abombs: this is the most destructive
+weapon. the only safe place in the area
+of an abomb explosion is a nuclear 
+shelter. an other way to safe yourself
+from a nuclear explosion is to shoot
+the abomb before it explodes.
+
+men: there are two icons to launch men,
+the first one releases a man with a chain
+gun, the second one with a flame thrower.
+you can lock men on targets the same way
+you do as with rockets. be sure to not
+drive over your own man when you release
+him.
+
+smoke screen: the smoke screen is handy 
+to hide what you are doing from your
+opponent.
+
+invisibility: if you activate this then
+you will be invisible for some time.
+in two player mode the arrow that 
+indicates your opponent will dissapear
+and you will not show on your opponents
+screen. turrets are also not able to
+spot you.
+
+extra speed: if you are in some nasty
+situation, you can rescue yourself by
+speeding your way out of it.
+
+4.5 the enemies
+---------------
+
+now we've had the weapons we can go on to
+the section of what to use 'em on.
+
+4.5.1 tanks
+-----------
+
+there are a lot of different tanks,
+computer tanks can bee "good" or "evil"
+to you (only way to find out is to drive
+to them). I'll trust you to find the
+weak spots of every tank.
+
+4.5.2 trains
+------------
+
+trains are very brute, they can drive
+over/through virtually everything. there
+are some special wagons: wagons with
+nuclear missiles and wagons with a turret.
+these can be quite destructive too.
+
+4.5.3 B52's
+-----------
+
+The B52 is very stupid, it just lifts off
+and starts flying randomly over the map
+while dropping bombs all of the time. On
+the ground B52's can be killed by normal
+weapons, but once in the air they can only
+be killed by rockets (3 will do).
+
+4.5.4 turrets
+-------------
+
+Turrets turn very slow, so you can kill
+them easily if you are smart. Furthermore
+turrets can't spot you when you're invisi-
+ble.
+
+4.5.5 Mines
+-----------
+
+Mines come in two varieties, the light and
+the heavy one. The light one is invisible
+and will explode when you drive over it.
+The heavy one is visible and will shoot
+rockets in all directions if you drive
+to close to it. Fortunately all mines can
+be blown away by a single shot.
+
+4.5.6 Warps
+-----------
+
+Warps can take you to secret areas or they
+can just make life very uneasy. An
+interesting option: men and rockets can
+travel through warps too.
+
+4.5.7 Locks
+-----------
+
+Sometimes areas are blocked by a lock. in
+this case you have to blow up something
+to open this lock. Most keys are indicated
+by a small building with a key on top of
+it.
+
+4.5 the status screen
+---------------------
+
+In player vs player mode you have two
+counters in the upper left corner of
+your screen. the left one indicates
+your armor, the right one indicates
+the amount of fuel you have left.
+
+in a mode versus computer you have
+three counters in the upper right
+corner of the screen. the left counter
+indicates the percentage goals you
+shot, the middle one indicates the
+percentage of goals you failed to
+protect. the right counter indicates
+the id number of the tank you are
+currently driving. F1 is id #1, F2
+is id #2, .. F10 is id #10.
+
+in player vs player mode you also have
+an arrow that always indicates the
+location of your opponent.
+
+if you start "tank -debug" you get
+additional information about memory
+usage and the frame rate.
+
+4.6 bonusses
+------------
+
+when you destroy structures sometimes
+an icon will become visible. if you
+are a tank then you can driver over them
+to get extra weapons. if you're not then
+you can always destroy them with your
+gun to prevent your opponent from
+collecting it.
+
+4.7 pausing the game
+--------------------
+
+press 'p' to pause the game, press
+any other key to continue.
+
+4.8 making screen shots!
+------------------------
+
+Press print screen when you are playing
+and Tank Arena will save your screen
+shot in a file called: tank????.bmp
+where ???? is a number.
+
+5 editing a map
+---------------
+
+due to the complexity of the map editor
+I'm not going to explain it in detail.
+I'll only tell you how to get started.
+
+the editor is not fool proof, it's up
+to yourself to create playable maps with
+it.
+
+select map editor in the main menu and
+enter a map name. Press ESC to see a
+list of available maps.
+
+5.1 controls
+------------
+
+5.1.1 keyboard
+--------------
+
+use the cursor keys, home, end, pgup and
+pgdn to scroll around the map. use [F2] to
+save and [F3] to load a map. press [space]
+to go to the structure selection screen
+and press [TAB] to see the map and click
+on it to go from one to another place fast.
+
+5.1.2 mouse
+-----------
+
+use the left mouse button to select items
+from the menu on the right of the screen.
+
+the middle mouse button (if active) always
+selects the menu item "done".
+
+if a menu shows something like:
+"option 1/option 2" then the left mouse
+button will select "option 1" and the
+right mouse button will select "option 2"
+when you move your mouse pointer in the
+map area.
+
+when modifying counters, the left button
+always increments the value and the right
+mouse button decrements the value.
+
+in all the other cases only the left
+mouse button is active.
+
+5.2 creating a new map
+----------------------
+
+select: file,create. then select one of 
+the 3 possible undergrounds. after that 
+select if you want to start with something 
+in your map. finally you need to select 
+the dimensions of the map. 8x8 is the
+smallest and 200x200 the largest.
+all maps have dimensions in multiples
+of 4, but Tank Arena will automatically
+correct invalid input.
+
+5.3 creating a starting point
+-----------------------------
+
+for a one player mode map you must select: 
+object,add,tank,1p mode and then the type
+of tank you want to start with. left click 
+on the map where you want it. click right
+to rotate it. press middle button or
+select done if you are finished. if you
+create more than one tank you sometimes
+need to go to the menu: control,player
+and select a new id number for your tank.
+if you give two tanks the same id you get
+unpredictable results. (this occurs
+especially when cloning tanks.)
+
+for a two player mode map you must select:
+object,add,tank,2p mode. and then you must
+select the type of tank. if you left click
+on the map a white tank will appear. this
+means that the tank you selected in the
+options menu will be substituted for this
+one. you can also put helicopter, plane
+start points in the map. be sure to only
+create plane start points on a runway or
+you will not be able to lift off.
+
+if you forgot this step, then Tank Arena
+will return an error if you try to start
+the map.
+
+5.4 creating buildings
+----------------------
+
+press spacebar and the map will change in
+a map with a lot of stuff in it. press the
+left button on the thing you want to
+select and the menu will dissapear again.
+press the left button again to put the
+thing in your map. press the right button
+to remove it.
+
+the two options below are for creating
+large spaces with the same structure.
+press the left button to select a corner
+and press the right button to fill or
+delete the region.
+
+5.5 creating other objects
+--------------------------
+
+select: objects,add. now you can choose
+an object.
+
+5.5.1 tanks
+-----------
+
+select 1p mode or computer and select
+the type of tank you want. after that use
+the left button to put it in the map and
+use the right one to rotate it.
+
+the most important option is the
+"controller" option. it selects who plays
+with the tank. select "good" for a
+computer controlled tank who is friendly
+to you and who tries to shoot baddies.
+select "evil" if you want to get shot at.
+if you want to play with the tank yourself
+you will have to select "player" after
+that select the id number of the tank
+(see the section: creating a starting
+point).
+
+next follow all kinds of other options to
+make the tank stronger or weaker, the key-
+word is: experiment.
+
+5.5.2 trains
+------------
+
+you must create a train by selecting "new
+train". then left click on the map and
+click right to move it in the right
+direction. the map editor checks nothing
+so you should take care to place the train
+on rails. next select "add wagon" and
+select a wagon type. place it in the map
+behind the locomotive. continue this
+step until you are satisfied with your
+train.
+
+the difficult part of the train is that
+you can't add to or edit old trains,
+you'll just have to delete it and start
+over. also if you've done something else
+wrong (like reversing the order of wagons)
+the train will drive kind of strange.
+this is not a bug, it's just that I didn't
+want to spend all of my time creating a
+foolproof map editor. a helpful thing is
+that every wagon shows by a dotted line to
+which wagon it is connected when you edit
+it.
+
+5.5.3 B52's
+-----------
+
+Select B52 and left click on the map,
+click right to rotate it. be sure the B52
+has something to lift off from.
+
+Behaviour of B52's is totally random, so
+they can hardly be used to bomb a specific
+location (it can be done though, but they
+can give some nasty results later).
+
+5.5.4 turrets
+-------------
+
+Select turret and left click on the map,
+click right to rotate it. With "shoot
+at" some tanks can be excluded as target
+for the turret. The circle around the
+turret indicates the firing range.
+
+There are two modes:
+
+In one mode, the turret can rotate and
+will shoot at the closest target. If
+you select "forbidden zone" and click on
+one of the sixteen dotted lines then
+you can disable the turret in one or
+more directions (indicated with red).
+This is to prevent turrets from shooting
+the buildings they are to protect.
+
+The second mode is selected by clicking
+on props/fixed dir. In this case the
+turret will not be able to rotate.
+
+In the "props" menu there are some other
+self explanatory options concerning fire
+rate etc.
+
+NOTE: If you don't place a turret onto
+a structure then it will dissappear when
+you start the game.
+
+5.5.5 mines
+-----------
+
+Select the type of mine you want to
+place and left click on the map where
+you want it.
+
+5.5.6 warps
+-----------
+
+Select: misc.,warp and left click on the
+point where the warp entry has to be.
+then click on the point where the exit
+has to be. you can change the entry point
+later by pressing the right button on the
+map.
+
+5.5.7 locks
+-----------
+
+placing locks works like placing warps.
+you can select an object or a structure
+as key and you can choose what the lock
+should destroy. if you want a lock that
+blows when you drive through a specific
+area, use the lock in combination with
+a goal.
+
+5.5.8 goals
+-----------
+
+with goals you can award mission goal
+points to tanks/trains moving into a
+certain area.
+
+select: misc.,goal and left click on the
+map. select "radius" and use the left or
+right mouse button to adjust it. after
+that select "who" and select the object
+who can activate the goal.
+
+after you have done this you need to
+go to the special,object goals menu to
+change the mission goal value.
+(see below)
+
+5.5.8 destroyer
+---------------
+
+the destroyer can be used to destroy an
+entire area at the beginning of a level,
+but it can also be used in combination
+with a lock to destroy an area when
+the lock blows.
+
+5.5.9 enforcer
+--------------
+
+the enforcer forces a computer tank to
+change/fire it's weapon. you can use
+it for example to let a tank place an
+a-bomb. but you could also make a level
+in which the enemy gets "new technology"
+when it reaches a certain point.
+
+5.6 mission goals
+-----------------
+
+in player vs computer mode Tank Arena uses
+two counters to determine mission success
+or failure.
+
+in the menu special,object goals or
+special,structure goals you can set these
+numbers. if you select one of these menus,
+a number will show on every block (for
+structure goals) or on every object (for
+object goals). you can use the left button
+to increase this number and you can use
+the right button to decrease this number.
+
+a positive number means that it is a
+mission objective for good, a negative
+number means it is an objective for evil.
+
+if you kill an object/a structure then
+the absolute value will be added to the
+mission complete/failed counter. if one
+of the counters reaches 100 the mission
+is complete/failed. (the counters can
+be seen in the upper-right corner on
+screen when playing.)
+
+example: if you have to protect a train,
+and destroy two buildings, you should put
+the train to -100 and the two buildings to
++50 each. if you destroy the train the
+mission failure counter will reach 100
+and the mission will be failed. however
+if you destroy both buildings the mission
+complete counter reaches 100 and the
+mission will be complete.
+
+if you want an objective you have to reach
+add a "goal" object and give some value
+to it with special,object goals. the
+"goal" object is described above.
+
+5.7 mission codes
+-----------------
+
+this section is only important for player
+vs computer modes. in the menu: special,
+mission codes,this/next mission you can
+type the mission code for your map. with
+this you can select the name you have to
+type when you want to start the map, and
+you can select the mission code that will
+be automatically filled in when you com-
+plete the mission. by default "this mis-
+sion code" is set to the name of the map
+on disk.
+
+5.8 mission briefing
+--------------------
+
+if you want to display a text before/
+after your level has been played, you
+need to use your own editor to create
+one or more files.
+
+go to the maps directory and edit one
+of the following files: (let's assume
+your map is called "foo.map")
+
+foo.0 - mission briefing
+foo.1 - mission complete debriefing
+foo.2 - mission failed debriefing
+
+the files foo.1 and foo.2 are not
+used in dual player maps.
+
+if you create or change one of these files,
+you have to go to the map editor to load
+and save your map (because the texts are
+stored into "foo.map")
+
+due to the font used, your texts can
+be about 50 characters wide.
+
+5.9 saving and quitting
+-----------------------
+
+press esc. then type the name for the map
+and press ENTER.
+
+
+5.10 final remark
+-----------------
+
+The best way to find out how the editor
+works is to play with it a little bit,
+it's not that hard to learn.
+
+There is also a graphical tutorial on the
+net:
+
+http://indy3.cpedu.rug.nl:8000/tank/tut/
+
+
+6 contributors
+--------------
+
+Tank Arena was compiled on DJGPP 2.00
+You need a DPMI manager to run this
+game under DOS, but this is included
+in the distribution.
+
+6.1 DPMI manager
+----------------
+
+Tank Arena has been tested and is stable
+with cwsdpmi from Charles W. Sandmann.
+This program is distributed together
+with Tank Arena, updates can be obtained
+by FTP from:
+
+ftp.coast.net
+
+/simtel/vendors/djgpp/v2misc/csdpmi*.zip
+
+or any other simtel mirror.
+
+6.2 Allegro library
+-------------------
+
+Many functions were used from the
+Allegro Game Library v 3.0, this was
+written by Shawn Hargreaves (and it's
+really good).
+
+You can obtain it from:
+
+x2ftp.oulu.fi
+
+/pub/msdos/programming/djgpp2/alleg*.zip
+
+or on other simtel mirrors.
+
+7 How to get in touch
+---------------------
+
+All reactions/bug reports are welcome, send an
+e-mail to:
+
+3.14@kagi.com

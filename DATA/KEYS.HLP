@@ -1,0 +1,66 @@
+Here is a listing of the default keyboard
+configuration:
+
+General:
+
+   * Select tank: F1..F10
+     (single & dual v computer mode)
+   * Select tank: Alt-F1..Alt-F10
+     (dual player v computer mode)
+
+   * Change gamma correction: F11
+   * Toggle radar on/off: F12
+
+   * Pause game: P
+
+   * Exit game: Esc
+
+   * Make screen shot: PrtScr
+
+   * Make window bigger: +
+   * Make window smaller: -
+
+Player one:
+
+   * Up: K
+   * Down: ,
+   * Left: M
+   * Right: .
+
+   * Fire: Z
+   * Shield: A
+
+   * Select weapon left: S
+   * Select weapon right: D
+
+   * Turret left: X
+   * Turret right: C
+     (if tank has a turret)
+
+Player two: (or player for single player game)
+
+   * Up: numeric keyboard Up
+   * Down: numeric keyboard Down
+   * Left: numeric keyboard Left
+   * Right: numeric keyboard Right.
+
+   * Fire: grey Delete
+   * Shield: grey Insert
+
+   * Select weapon left: grey Home
+   * Select weapon right: grey Pgup
+
+   * Turret left: grey End
+   * Turret right: grey Pgdn
+     (if tank has a turret)
+
+You can then redefine the keys in the
+"configure keys" menu in the setup
+program. How this is done is described
+there. But you'll have to experiment to
+find another good combination, because
+the keyboard cannot detect a lot of
+keypresses at the same time. This is
+not a bug in tank arena, it is simply
+a limitation of the keyboard.
+

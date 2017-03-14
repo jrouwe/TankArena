@@ -1,0 +1,36 @@
+# Make file for TANK ARENA, is executed once in every directory
+# and creates libout.a containing compiled versions of *.c *.cc
+# and *.s
+
+# Let this reflect to the real directories
+
+INCLUDES = -I/tank/src/include -I/djgpp/allegro/src -I/djgpp/allegro/src/djgpp
+
+# Extra options for gcc
+
+GCC = gcc -g -O3 -ffast-math -Wall -Wunused -Werror $(INCLUDES)
+
+# Define targets
+
+C = $(wildcard *.c)
+OBJS = $(C:%.c=%.o) 
+S = $(wildcard *.s)
+OBJS += $(S:%.s=%.o)
+
+# Rules to build
+
+libout.a: $(OBJS)
+	ar rs $@ $^
+
+clean:
+	del *.o
+	del libout.a
+
+%.o: %.cc
+	$(GCC) -o $@ -c $<
+
+%.o: %.c
+	$(GCC) -o $@ -c $<
+
+%.o: %.s
+	$(GCC) -o $@ -c $<
